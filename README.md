@@ -1,6 +1,6 @@
 # SI
 
-Olaseni Sode, Jesus Ruiz, and Steve Peralta 'Combination bands of the argon carbon dioxide complex using theoretical vibrational spectroscopy' 
+Olaseni Sode, Jesus Ruiz, and Steve Peralta 'Theoretical investigation of the vibrational structure of the Ar-CO2 complex' 
 Supporting Information
 
 --------------------------------------------------------------------------------
@@ -11,30 +11,17 @@ Directory structure
 project
 │   README.md
 │
-└───complex
-    └───coord
-    │       NC_TRANS
-    │       complex.xyz
-    │       complex.zmat
-    │
-    └───vci
-        │   vci-7.txt
-        │   vci-8.txt
-        │   vci-9.txt
-        │   vci-10.txt
-        │   vci-11.txt
-        │   vci-12.txt
-        │   vci-13.txt
-        │   vci-14.txt
-        │
-        └───max7
-        └───max8
-        └───max9
-        └───max10
-        └───max11
-        └───max12
-        └───max13
-        └───max14
+└───coord
+│    │    NC_TRANS
+│    │    tshaped.xyz
+│    │    tshaped.zmat
+│    │    linear.xyz
+│    │    linear.zmat
+│    │    complex.tga
+└───library
+└───routine 
+        └───cpp
+        └───python
 ```
 
 --------------------------------------------------------------------------------
@@ -62,16 +49,16 @@ z-matrix coordinates of the Ar-CO2 complex
 
 --------------------------------------------------------------------------------
 
-list of VCI energy levels at different approximations according to the
-VCI-(k) notation
+directory for compiling the shared libraries mbCO2AR.cpp and mbCO2.cpp which are 
+used to compute the PES for the CO2-Ar complex
 
-vci-?.txt
+library
 
 --------------------------------------------------------------------------------
 
-list of VCI coefficients, in paratheses, for each VCI energy level with 
-respect to the VSCF wavefunctions
+directory for compiling routines for computing the potential energy of CO2-Ar
+configurations using cpp and python
 
-VCI_MODES*.dat
+routine
 
 --------------------------------------------------------------------------------
