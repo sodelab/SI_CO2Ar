@@ -1,0 +1,31 @@
+
+Build
+
+To build this python library, simply enter the following 
+into the command line.
+
+    python setup.py build
+
+This will generate a Python module, which can be found in 
+the ./build/lib.macosx directory. 
+
+install_name_tool libCO2Ar.so -id @rpath/libCO2Ar.so
+
+Test
+
+To test the module, navigate to the build/lib directory and
+within a Python script add the following command:
+
+    import CO2AR
+
+The current modules are:
+
+    MBCO2AR(rCO,R,theta)
+
+Install
+
+The module can be installed and more easily accessed by the
+following command:
+
+    python setup.py install
+
